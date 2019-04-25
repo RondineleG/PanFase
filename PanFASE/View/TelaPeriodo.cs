@@ -24,5 +24,15 @@ namespace PanFase
             TelaRelatorio relatorio = new TelaRelatorio(ini,fi);
             relatorio.ShowDialog();
         }
+
+        private void btnFeichar_Click(Object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMininizar_Click(Object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
