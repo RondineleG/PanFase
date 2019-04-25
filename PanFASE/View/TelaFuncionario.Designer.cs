@@ -43,7 +43,11 @@
             this.dtp_DtAdmFunc = new System.Windows.Forms.DateTimePicker();
             this.mtb_CpfFunc = new System.Windows.Forms.MaskedTextBox();
             this.tb_NomeFunc = new System.Windows.Forms.TextBox();
+            this.pnlTopo = new System.Windows.Forms.Panel();
+            this.btnMininizar = new System.Windows.Forms.Button();
+            this.btnFeichar = new System.Windows.Forms.Button();
             this.gb_funcionario.SuspendLayout();
+            this.pnlTopo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_nomefunc
@@ -97,7 +101,7 @@
             this.gb_funcionario.Controls.Add(this.lb_dataadm);
             this.gb_funcionario.Controls.Add(this.Lb_cpffunc);
             this.gb_funcionario.Controls.Add(this.lb_nomefunc);
-            this.gb_funcionario.Location = new System.Drawing.Point(12, 0);
+            this.gb_funcionario.Location = new System.Drawing.Point(12, 43);
             this.gb_funcionario.Name = "gb_funcionario";
             this.gb_funcionario.Size = new System.Drawing.Size(418, 255);
             this.gb_funcionario.TabIndex = 4;
@@ -176,18 +180,62 @@
             this.tb_NomeFunc.Size = new System.Drawing.Size(282, 20);
             this.tb_NomeFunc.TabIndex = 0;
             // 
+            // pnlTopo
+            // 
+            this.pnlTopo.BackColor = System.Drawing.SystemColors.GrayText;
+            this.pnlTopo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlTopo.Controls.Add(this.btnMininizar);
+            this.pnlTopo.Controls.Add(this.btnFeichar);
+            this.pnlTopo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlTopo.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopo.Name = "pnlTopo";
+            this.pnlTopo.Size = new System.Drawing.Size(442, 30);
+            this.pnlTopo.TabIndex = 46;
+            // 
+            // btnMininizar
+            // 
+            this.btnMininizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMininizar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMininizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMininizar.ForeColor = System.Drawing.Color.White;
+            this.btnMininizar.Location = new System.Drawing.Point(386, 1);
+            this.btnMininizar.Name = "btnMininizar";
+            this.btnMininizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMininizar.TabIndex = 1;
+            this.btnMininizar.Text = "--";
+            this.btnMininizar.UseVisualStyleBackColor = false;
+            this.btnMininizar.Click += new System.EventHandler(this.btnMininizar_Click);
+            // 
+            // btnFeichar
+            // 
+            this.btnFeichar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFeichar.BackColor = System.Drawing.Color.Maroon;
+            this.btnFeichar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeichar.ForeColor = System.Drawing.Color.White;
+            this.btnFeichar.Location = new System.Drawing.Point(413, 1);
+            this.btnFeichar.Name = "btnFeichar";
+            this.btnFeichar.Size = new System.Drawing.Size(30, 30);
+            this.btnFeichar.TabIndex = 2;
+            this.btnFeichar.Text = "X";
+            this.btnFeichar.UseVisualStyleBackColor = false;
+            this.btnFeichar.Click += new System.EventHandler(this.btnFeichar_Click);
+            // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 267);
+            this.ClientSize = new System.Drawing.Size(442, 316);
+            this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.gb_funcionario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionário";
             this.gb_funcionario.ResumeLayout(false);
             this.gb_funcionario.PerformLayout();
+            this.pnlTopo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -208,5 +256,8 @@
         private System.Windows.Forms.TextBox tb_CargoFunc;
         private System.Windows.Forms.TextBox tb_Codigo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlTopo;
+        private System.Windows.Forms.Button btnMininizar;
+        private System.Windows.Forms.Button btnFeichar;
     }
 }

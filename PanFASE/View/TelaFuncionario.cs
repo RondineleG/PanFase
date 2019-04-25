@@ -39,5 +39,15 @@ namespace PanFase
                 MessageBox.Show(this, "Este campo precisa ser preenchido para que o cadastro seja efetuado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnFeichar_Click(Object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMininizar_Click(Object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
